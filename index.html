@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foodpanda Clone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Foodpanda</div>
+    <div class="auth-buttons">
+      <button onclick="logout()">Logout</button>
+    </div>
+  </nav>
+
+  <section id="auth" class="container">
+    <h2>Login / Sign Up</h2>
+    <input type="email" id="email" placeholder="Email">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+    <button onclick="signup()">Sign Up</button>
+    <p id="auth-message"></p>
+  </section>
+
+  <section id="dashboard" class="container" style="display:none;">
+    <h2>Welcome to Foodpanda</h2>
+
+    <h3>Add Menu Item</h3>
+    <input type="text" id="item-name" placeholder="Item Name">
+    <input type="number" id="item-price" placeholder="Item Price">
+    <input type="text" id="item-image" placeholder="Image URL">
+    <button onclick="addMenuItem()">Add Item</button>
+
+    <h3>Food Menu</h3>
+    <div id="menu" class="menu-grid"></div>
+
+    <h3>Your Cart</h3>
+    <ul id="cart" class="cart-list"></ul>
+  </section>
+
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
