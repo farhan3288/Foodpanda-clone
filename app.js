@@ -51,9 +51,9 @@ auth.onAuthStateChanged(user => {
 });
 
 let menuItems = [
-  { name: "Burger", price: 200, image: "https://source.unsplash.com/200x150/?burger" },
-  { name: "Pizza", price: 500, image: "https://source.unsplash.com/200x150/?pizza" },
-  { name: "Biryani", price: 300, image: "https://source.unsplash.com/200x150/?biryani" }
+  { name: "Burger", price: 200, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOX2YyS0W1LnrD5eyd-7Q9kvO1JGvE80AXXA&s" },
+  { name: "Pizza", price: 500, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrgh6Xx8CBnZM8NPOmIEOwqV_KK6PnE1pluA&s" },
+  { name: "Biryani", price: 300, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjrzxb50qx_ti-Lh5fJ8DHfELFrDrMK6NG1w&s" }
 ];
 
 function loadMenu() {
